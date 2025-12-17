@@ -276,18 +276,35 @@
 				margin-bottom: 3em;
 			}
 			.screenshots-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				display: flex;
 				gap: 1.5em;
 				margin-top: 2em;
+				overflow-x: auto;
+				overflow-y: hidden;
+				padding: 1em 0 2em 0;
+				scroll-behavior: smooth;
+				-webkit-overflow-scrolling: touch;
+			}
+			.screenshots-grid::-webkit-scrollbar {
+				height: 8px;
+			}
+			.screenshots-grid::-webkit-scrollbar-track {
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 4px;
+			}
+			.screenshots-grid::-webkit-scrollbar-thumb {
+				background: rgba(0, 191, 165, 0.5);
+				border-radius: 4px;
+			}
+			.screenshots-grid::-webkit-scrollbar-thumb:hover {
+				background: rgba(0, 191, 165, 0.7);
 			}
 			.screenshot-item {
-				position: relative;
+				flex: 0 0 auto;
 				text-align: center;
 			}
 			.screenshot-item img {
-				width: 100%;
-				max-width: 224px;
+				width: 224px;
 				height: auto;
 				border-radius: 18px;
 				box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
