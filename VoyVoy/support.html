@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	VoyVoy Support Page - Blocksize One UG
+	VoyVoy Support Page
 	Based on Eventually by HTML5 UP
 -->
 <html>
@@ -9,149 +9,119 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="VoyVoy Support - FAQ and help for your essential travel currency companion iOS app" />
-		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔷</text></svg>">
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<style>
-			html, body {
-				height: auto;
-				min-height: 100vh;
-				overflow-y: auto;
-				overflow-x: hidden;
+			html {
+				height: 100%;
 			}
 			body {
-				display: block;
-				padding: 3em 0;
+				height: auto !important;
+				min-height: 100vh !important;
+				display: block !important;
+				padding: 0 !important;
 			}
-			.support-wrapper {
-				width: 100%;
-				max-width: 900px;
-				margin: 0 auto;
-				padding: 2em;
+			.page-wrapper {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 3em 2em;
+			}
+			#header {
+				margin-bottom: 2em;
+				margin-top: 2em;
+				flex-shrink: 0;
 			}
 			.support-content {
-				background: rgba(27, 27, 30, 0.85);
+				flex: 1 0 auto;
+			}
+			#footer {
+				margin-top: 3em;
+				margin-top: auto;
+				flex-shrink: 0;
+			}
+			.support-content {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 2em;
+			}
+			.section {
+				background: rgba(27, 27, 30, 0.6);
 				backdrop-filter: blur(10px);
-				padding: 3em;
+				padding: 2em;
+				margin: 1.5em 0;
 				border-radius: 8px;
-				text-align: left;
-				color: rgba(255, 255, 255, 0.85);
 				border: 1px solid rgba(255, 255, 255, 0.1);
 			}
-			.support-content h1 {
+			.section h2 {
 				color: #fff;
-				font-size: 2.5em;
-				font-weight: 300;
-				letter-spacing: -0.025em;
-				margin-bottom: 0.25em;
-				text-align: center;
-			}
-			.support-content .subtitle {
-				text-align: center;
-				color: rgba(255, 255, 255, 0.7);
-				font-size: 1.2em;
-				margin-bottom: 0.5em;
-			}
-			.support-content .app-info {
-				text-align: center;
-				color: rgba(255, 255, 255, 0.6);
-				font-size: 0.9em;
-				margin-bottom: 2em;
-				padding-bottom: 2em;
-				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-			}
-			.support-content h2 {
-				color: rgba(255, 255, 255, 0.95);
-				margin-top: 2em;
+				font-size: 1.8em;
 				margin-bottom: 1em;
-				font-size: 1.5em;
 				font-weight: 300;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 				padding-bottom: 0.5em;
 			}
-			.support-content h3 {
-				color: rgba(255, 255, 255, 0.9);
-				margin-top: 1.5em;
-				margin-bottom: 0.75em;
-				font-size: 1.1em;
+			.section h3 {
+				color: rgba(255, 255, 255, 0.95);
+				font-size: 1.2em;
+				margin: 1.5em 0 0.75em 0;
 				font-weight: 400;
 			}
-			.support-content p {
+			.section p {
 				color: rgba(255, 255, 255, 0.75);
 				line-height: 1.75;
-				margin-bottom: 1.25em;
+				margin-bottom: 1em;
 			}
-			.support-content ol {
+			.section ol, .section ul {
 				color: rgba(255, 255, 255, 0.75);
 				line-height: 1.75;
-				margin-bottom: 1.25em;
-				margin-left: 1.5em;
+				margin: 0 0 1em 1.5em;
 			}
-			.support-content ul {
-				color: rgba(255, 255, 255, 0.75);
-				line-height: 1.75;
-				margin-bottom: 1.25em;
+			.section ul {
 				list-style-type: none;
 				padding-left: 0;
 			}
-			.support-content ul li {
+			.section ul li {
 				padding-left: 1.5em;
 				text-indent: -1.5em;
+				margin-bottom: 0.3em;
 			}
-			.support-content a {
+			.section a {
 				color: rgba(255, 255, 255, 0.9);
 				text-decoration: none;
 				border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-				transition: all 0.3s;
 			}
-			.support-content a:hover {
+			.section a:hover {
 				color: #fff;
 				border-bottom-color: #fff;
 			}
-			.contact-section {
-				margin-top: 3em;
-				padding-top: 2em;
-				border-top: 1px solid rgba(255, 255, 255, 0.2);
+			.contact-box {
+				background: rgba(0, 200, 100, 0.1);
+				border: 1px solid rgba(100, 255, 150, 0.3);
+				padding: 1.5em;
+				border-radius: 8px;
 				text-align: center;
-			}
-			.contact-section h2 {
-				border: none;
-				text-align: center;
-			}
-			.back-link {
-				text-align: center;
-				margin-top: 3em;
-			}
-			.back-link a {
-				color: rgba(255, 255, 255, 0.75);
-				text-decoration: none;
-				border: 1px solid rgba(255, 255, 255, 0.25);
-				padding: 0.75em 2em;
-				border-radius: 4px;
-				transition: all 0.3s;
-				display: inline-block;
-			}
-			.back-link a:hover {
-				background: rgba(255, 255, 255, 0.05);
-				border-color: rgba(255, 255, 255, 0.5);
-				color: #fff;
+				margin-top: 2em;
 			}
 		</style>
 	</head>
 	<body class="is-preload">
+		<div class="page-wrapper">
 
-		<div class="support-wrapper">
-			<div class="support-content">
-				<h1>VoyVoy Support</h1>
+		<!-- Header -->
+		<header id="header">
+			<h1>VoyVoy Support</h1>
+			<p><strong>Your Essential Travel Currency Companion</strong><br />
+			VoyVoy is a free iOS app providing instant currency conversion,<br />
+			lock screen widgets, and custom wallpapers for travelers.<br />
+			<br />
+			<strong>Requirements:</strong> iOS 17.0 or later</p>
+		</header>
 
-				<p class="subtitle">Your Essential Travel Currency Companion</p>
-
-				<p class="app-info">
-					VoyVoy is a free iOS app providing instant currency conversion, lock screen widgets, and custom wallpapers for travelers.<br>
-					<strong>Requirements:</strong> iOS 17.0 or later
-				</p>
-
-				<h2>Frequently Asked Questions</h2>
-
+		<div class="support-content">
+			<!-- Getting Started -->
+			<div class="section">
 				<h2>Getting Started</h2>
 
 				<h3>How do I add the widget to my lock screen?</h3>
@@ -165,7 +135,10 @@
 
 				<h3>How often are exchange rates updated?</h3>
 				<p>Exchange rates are refreshed automatically when you open the app (if connected to the internet). Rates are sourced from the European Central Bank via Frankfurter.dev and are typically updated daily.</p>
+			</div>
 
+			<!-- Features -->
+			<div class="section">
 				<h2>Features</h2>
 
 				<h3>What currencies are supported?</h3>
@@ -212,7 +185,10 @@
 
 				<h3>How do I save wallpapers to my photos?</h3>
 				<p>After generating a wallpaper, tap "Save to Photos." You'll be prompted to grant photo library access the first time. The wallpaper is saved at your device's native resolution.</p>
+			</div>
 
+			<!-- Troubleshooting -->
+			<div class="section">
 				<h2>Troubleshooting</h2>
 
 				<h3>Exchange rates aren't updating</h3>
@@ -242,7 +218,10 @@
 					<li>Ensure you're running iOS 17.0 or later</li>
 					<li>If the problem persists, contact support below</li>
 				</ol>
+			</div>
 
+			<!-- Privacy & Pricing -->
+			<div class="section">
 				<h2>Privacy & Pricing</h2>
 
 				<h3>Is the app really free?</h3>
@@ -252,17 +231,30 @@
 				<p>The in-app purchases are voluntary donations to support development. They do NOT unlock any features - the entire app is free regardless of whether you donate.</p>
 
 				<h3>What data does VoyVoy collect?</h3>
-				<p>VoyVoy does not collect, store, or transmit any personal data. Location data (if you grant permission) is only used locally to suggest destination currencies. All preferences are stored on your device. See our <a href="../legal.html">Privacy Policy</a> for details.</p>
+				<p>VoyVoy does not collect, store, or transmit any personal data. Location data (if you grant permission) is only used locally to suggest destination currencies. All preferences are stored on your device. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
 
-				<div class="contact-section">
-					<h2>Contact Support</h2>
-					<p><strong>Email:</strong> <a href="mailto:webmaster@blocksize.one">webmaster@blocksize.one</a></p>
+				<div class="contact-box">
+					<h3 style="margin-top: 0;">Contact Support</h3>
+					<p style="margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:webmaster@blocksize.one" style="border: none;">webmaster@blocksize.one</a></p>
 				</div>
 			</div>
 		</div>
 
-		<!-- Scripts -->
-		<script src="../assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="mailto:webmaster@blocksize.one" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Blocksize One UG (haftungsbeschränkt)</li>
+				<li><a href="../legal.html">Imprint • Legal Notice • Privacy</a></li>
+				<li><a href="index.html">VoyVoy Home</a></li>
+			</ul>
+		</footer>
 
+		<!-- Scripts -->
+		<script src="main.js"></script>
+
+		</div><!-- .page-wrapper -->
 	</body>
 </html>
