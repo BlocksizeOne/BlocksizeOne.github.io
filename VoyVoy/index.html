@@ -258,6 +258,51 @@
 				margin-bottom: 2em;
 			}
 
+			/* Screenshots Showcase */
+			.screenshots-showcase {
+				max-width: 1200px;
+				margin: 4em auto;
+				text-align: center;
+			}
+			.screenshots-showcase h2 {
+				font-size: 2.2em;
+				margin-bottom: 0.5em;
+				color: #fff;
+				font-weight: 300;
+			}
+			.screenshots-showcase .subtitle {
+				font-size: 1.1em;
+				color: rgba(255, 255, 255, 0.7);
+				margin-bottom: 3em;
+			}
+			.screenshots-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 2em;
+				margin-top: 2em;
+			}
+			.screenshot-item {
+				position: relative;
+				text-align: center;
+			}
+			.screenshot-item img {
+				width: 100%;
+				max-width: 320px;
+				height: auto;
+				border-radius: 24px;
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.screenshot-item img:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+			}
+			.screenshot-item .caption {
+				margin-top: 1em;
+				font-size: 0.95em;
+				color: rgba(255, 255, 255, 0.8);
+			}
+
 			/* Footer */
 			#footer {
 				max-width: 1000px;
@@ -303,6 +348,30 @@
 
 			<a href="https://apps.apple.com/de/app/voyvoy/id6756260596" class="cta-primary">Download Free on App Store</a>
 			<p class="requirements">Requires iOS 17.0 or later • iPhone</p>
+		</div>
+
+		<!-- Screenshots Showcase -->
+		<div class="screenshots-showcase">
+			<h2>See VoyVoy in Action</h2>
+			<p class="subtitle">Check currency rates on your lock screen, create custom wallpapers, and convert currencies offline</p>
+			<div class="screenshots-grid">
+				<div class="screenshot-item">
+					<img src="screenshots/voyvoy_screenshot_00001_optimized.jpg" alt="VoyVoy Lock Screen Wallpaper" loading="lazy">
+					<p class="caption">Lock Screen Wallpaper</p>
+				</div>
+				<div class="screenshot-item">
+					<img src="screenshots/voyvoy_screenshot_00008_optimized.jpg" alt="Currency Converter Interface" loading="lazy">
+					<p class="caption">Instant Currency Conversion</p>
+				</div>
+				<div class="screenshot-item">
+					<img src="screenshots/voyvoy_screenshot_00006_optimized.jpg" alt="Create Custom Wallpapers" loading="lazy">
+					<p class="caption">Customize Your Wallpapers</p>
+				</div>
+				<div class="screenshot-item">
+					<img src="screenshots/voyvoy_screenshot_00007_optimized.jpg" alt="31 Supported Currencies" loading="lazy">
+					<p class="caption">31 Major Currencies</p>
+				</div>
+			</div>
 		</div>
 
 		<!-- Content Wrapper -->
