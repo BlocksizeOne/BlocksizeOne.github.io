@@ -275,6 +275,7 @@
 				color: rgba(255, 255, 255, 0.7);
 				margin-bottom: 3em;
 			}
+			/* Desktop: Horizontal Carousel */
 			.screenshots-grid {
 				display: flex;
 				gap: 1.5em;
@@ -318,6 +319,27 @@
 				margin-top: 1em;
 				font-size: 0.95em;
 				color: rgba(255, 255, 255, 0.8);
+			}
+
+			/* Mobile: 2-Column Grid */
+			@media screen and (max-width: 768px) {
+				.screenshots-grid {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 1.5em;
+					overflow-x: visible;
+					overflow-y: visible;
+					padding: 1em 0;
+				}
+				.screenshot-item {
+					flex: none;
+				}
+				.screenshot-item img {
+					width: 100%;
+					max-width: 180px;
+					margin: 0 auto;
+					display: block;
+				}
 			}
 
 			/* Footer */
